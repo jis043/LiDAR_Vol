@@ -1,0 +1,24 @@
+[project]
+name = "lidar-vol"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Sam Sun",email = "samsun@ems-inc.ca"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy (>=2.3.3,<3.0.0)",
+    "laspy (>=2.6.1,<3.0.0)",
+    "lazrs (>=0.8.0,<0.9.0)",
+    "scipy (>=1.16.2,<2.0.0)",
+    "rasterio (>=1.4.3,<2.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "lidar_vol", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
